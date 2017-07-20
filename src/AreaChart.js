@@ -66,7 +66,7 @@ export default class AreaChart extends React.Component {
     const accessors = {x: makeAccessor(getX), y: makeAccessor(getY), yEnd: makeAccessor(getYEnd)};
 
   // create d3 area path generator
-    const areaGenerator = d3.area();
+    const areaGenerator = d3.svg.area();
 
     // if gaps in data should be shown, use `props.isDefined` function as the `defined` param for d3's area generator;
     // but wrap it & pass in accessors as well, so that the function can easily access the relevant data values
