@@ -1,6 +1,7 @@
 //  Non-XY charts
 export {default as PieChart} from './PieChart';
 export {default as TreeMap} from './TreeMap';
+export {default as AlluvialDiagram} from './AlluvialDiagram';
 
 // XYPlot & XY charts
 export {default as XYPlot} from './XYPlot';
