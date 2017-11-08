@@ -1,0 +1,32 @@
+const AlluvialDiagramExample = (props) => {
+  const nodes = [
+    {
+      id: 'a'
+    },
+    {
+      id: 'b'
+    },
+    {
+      id: 'c'
+    }
+  ];
+  const edges = [
+    {
+      source: 'a',
+      target: 'c'
+    },
+    {
+      source: 'b',
+      target: 'c'
+    }
+  ];
+  return <div>
+    <AlluvialDiagram
+      nodes={nodes}
+      edges={edges}
+    />
+  </div>;
+};
+
+ReactDOM.render(<AlluvialDiagramExample />, mountNode);
+

@@ -18,6 +18,8 @@ const mainComponents = [
 ];
 
 const chartComponents = [
+  {name: 'AlluvialDiagram', path: '/alluvial-diagram', Component: Docs.AlluvialDiagramDocs},
+
   {name: 'AreaBarChart', path: '/area-bar-chart', Component: Docs.AreaBarChartDocs},
   {name: 'AreaChart', path: '/area-chart', Component: Docs.AreaChartDocs},
   {name: 'AreaHeatmap', path: '/area-heatmap', Component: Docs.AreaHeatmapDocs},

@@ -1,3 +1,4 @@
+export {default as AlluvialDiagramDocs} from './AlluvialDiagram/AlluvialDiagramDocs';
 export {default as AreaBarChartDocs} from './AreaBarChart/AreaBarChartDocs';
 export {default as AreaChartDocs} from './AreaChart/AreaChartDocs';
 export {default as AreaHeatmapDocs} from './AreaHeatmap/AreaHeatmapDocs';

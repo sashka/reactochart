@@ -1,0 +1,74 @@
+{
+  "description": "An alluvial diagram AKA Sankey diagram",
+  "methods": [],
+  "props": {
+    "nodes": {
+      "type": {
+        "name": "arrayOf",
+        "value": {
+          "name": "shape",
+          "value": {
+            "id": {
+              "name": "union",
+              "value": [
+                {
+                  "name": "string"
+                },
+                {
+                  "name": "number"
+                }
+              ],
+              "required": false
+            },
+            "value": {
+              "name": "number",
+              "required": false
+            },
+            "step": {
+              "name": "number",
+              "required": false
+            }
+          }
+        }
+      },
+      "required": false,
+      "description": ""
+    },
+    "edges": {
+      "type": {
+        "name": "arrayOf",
+        "value": {
+          "name": "shape",
+          "value": {
+            "source": {
+              "name": "union",
+              "value": [
+                {
+                  "name": "string"
+                },
+                {
+                  "name": "number"
+                }
+              ],
+              "required": false
+            },
+            "target": {
+              "name": "union",
+              "value": [
+                {
+                  "name": "string"
+                },
+                {
+                  "name": "number"
+                }
+              ],
+              "required": false
+            }
+          }
+        }
+      },
+      "required": false,
+      "description": ""
+    }
+  }
+}
