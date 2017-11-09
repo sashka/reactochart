@@ -19,8 +19,6 @@ export default class AlluvialDiagramExamples extends React.Component {
 
       {/* documentation goes here. intersperse docs with examples or leave examples loop below */}
 
-      <h4>Hello??</h4>
-
       {examples.map(example => {
         return <ExampleSection {...example} key={example.id} />;
       })}

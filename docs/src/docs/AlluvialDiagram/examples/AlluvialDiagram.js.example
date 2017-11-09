@@ -1,30 +1,4 @@
 const AlluvialDiagramExample = (props) => {
-  const nodes = [
-    {
-      id: 'a',
-      value: 20
-    },
-    {
-      id: 'b',
-      value: 30
-    },
-    {
-      id: 'c',
-      value: 50
-    }
-  ];
-  const links = [
-    {
-      source: 'a',
-      target: 'c',
-      value: 20
-    },
-    {
-      source: 'b',
-      target: 'c',
-      value: 30
-    }
-  ];
   const graph = getSampleData();
   return <div>
     <AlluvialDiagram
