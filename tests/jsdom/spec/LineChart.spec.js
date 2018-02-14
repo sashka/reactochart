@@ -27,7 +27,7 @@ describe('LineChart', () => {
     // ensure line is drawn as expected
     const chart = mount(<LineChart {...props} />);
     const path = chart.find('path');
-    const pathData = path.getNode().getAttribute('d');
+    const pathData = path.instance().getAttribute('d');
     expect(pathData).to.equal('M 0 50 L 50 0 L 100 75');
   });
 
@@ -49,7 +49,7 @@ describe('LineChart', () => {
     // ensure line is drawn as expected
     const chart = mount(<LineChart {...props} />);
     const path = chart.find('path');
-    const pathData = path.getNode().getAttribute('d');
+    const pathData = path.instance().getAttribute('d');
     expect(pathData).to.equal('M 0 50 L 50 0 L 100 75');
   });
 
@@ -66,7 +66,7 @@ describe('LineChart', () => {
     // ensure line is drawn as expected
     const chart = mount(<LineChart {...props} />);
     const path = chart.find('path');
-    const pathData = path.getNode().getAttribute('d');
+    const pathData = path.instance().getAttribute('d');
     expect(pathData).to.equal('M 0 50 L 50 0 L 100 75');
   });
 
@@ -86,7 +86,7 @@ describe('LineChart', () => {
 
     const path = chart.find('path');
     expect(path).to.have.length(1);
-    const pathData = path.getNode().getAttribute('d');
+    const pathData = path.instance().getAttribute('d');
     expect(pathData).not.to.include('NaN');
   })
 });

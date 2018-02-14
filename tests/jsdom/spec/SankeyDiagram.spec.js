@@ -5,7 +5,9 @@ import {mount, shallow} from "enzyme";
 import chai from "chai";
 import sinon from "sinon";
 import sinonChai from "sinon-chai";
+import chaiEnzyme from 'chai-enzyme';
 chai.use(sinonChai);
+chai.use(chaiEnzyme());
 const {expect} = chai;
 
 // use rewire to test internal SankeyNode/Link/etc. components
@@ -511,7 +513,6 @@ describe("SankeyDiagram", () => {
       const infoArg = nodeProps.onClickNode.args[0][1];
       expect(eventArg).to.be.an("object");
       expect(eventArg).to.have.property("target");
-      expect(eventArg.target).to.be.an("object");
       expect(infoArg).to.be.an("object");
       expect(infoArg.node).to.equal(basicNodeObj);
       expect(infoArg.graph).to.equal(nodeProps.graph);
@@ -594,7 +595,6 @@ describe("SankeyDiagram", () => {
       const infoArg = linkProps.onClickLink.args[0][1];
       expect(eventArg).to.be.an("object");
       expect(eventArg).to.have.property("target");
-      expect(eventArg.target).to.be.an("object");
       expect(infoArg).to.be.an("object");
       expect(infoArg.link).to.equal(linkObj);
       expect(infoArg.graph).to.equal(linkProps.graph);

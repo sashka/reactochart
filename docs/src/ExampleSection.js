@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import _ from 'lodash';
 import * as d3 from 'd3';
 import Playground from 'component-playground';
@@ -12,13 +13,13 @@ window.Reactochart = Reactochart;
 
 export default class ExampleSection extends React.Component {
   static propTypes = {
-    codeText: React.PropTypes.string,
-    scope: React.PropTypes.object,
-    isExpanded: React.PropTypes.bool,
-    label: React.PropTypes.node,
-    id: React.PropTypes.string,
-    description: React.PropTypes.node,
-    onClick: React.PropTypes.func
+    codeText: PropTypes.string,
+    scope: PropTypes.object,
+    isExpanded: PropTypes.bool,
+    label: PropTypes.node,
+    id: PropTypes.string,
+    description: PropTypes.node,
+    onClick: PropTypes.func
   };
   static defaultProps = {
     codeText: "",
